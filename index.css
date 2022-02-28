@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300&display=swap');
+body{
+    font-family: Inconsolata, monospace;
+}
+/******########## navbar ##########******/
+nav{
+    background-color: #ffff;
+}
+.nav-contenaire{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-contenaire .nav-left{
+    display: flex;
+    justify-content: space-around;
+}
+.nav-contenaire .nav-left li{
+    display: block;
+    padding-left: 25px;
+}
+.nav-contenaire .nav-left li a{
+    color: #000;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: Inconsolata , monospace;
+}
+/******########## landing ##########******/
+.landing{
+    display: flex;
+}
+.landing .landing-left{
+    /*background-color: red;*/
+    height: 572px;
+    width: 600px;
+    padding-top: 100px;
+}
+.landing .landing-left .container-block{
+    margin-left: 145px;
+    font-family: Inconsolata, monospace;
+    line-height: 25px;
+}
+.landing .landing-left .container-block .fade-1{
+    font-size: clamp(var(--fz-sm),5vw,var(--fz-md));
+    font-weight: 600;
+}
+.landing .landing-left .container-block .fade-2{
+    font-size: clamp(40px, 4vw, 80px);
+}
+.landing .landing-left .container-block .fade-3{
+    font-size: clamp(40px, 3.5vw, 80px);
+}
+.landing .landing-left .container-block .fade-4{
+    font-weight: 600;
+}
+.landing .landing-left .container-block .fade-5{
+    text-decoration: none;
+    display: inline-block;
+    color: #000;
+    border: 1px solid #000;
+    margin-top: 20px;
+    padding: 10px 15px;
+    font-weight: 600;
+}
+.landing .landing-right{
+    /*background-color: green;*/
+    width: 700px;
+}
+/******########## About me ##########******/
+.about-me-container{
+    display: flex;
+    justify-content: space-between;
+    font-family: Inconsolata, monospace;
+}
+.about-me-container .about-me-1{
+    /*background-color: red;*/
+    margin-left: 150px;
+    padding-top: 20px;
+    height: 572px;
+    text-align: left;
+    line-height: 33px;
+}
+.about-me-container .about-me-1 .about-me-text{
+    text-align: left;
+    display: block;
+    width: 350px;
+}
+.about-me-container .about-me-2{
+    /*background-color: green;*/
+    margin-right: 45px;
+}
