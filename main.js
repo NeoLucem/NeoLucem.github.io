@@ -18,10 +18,16 @@ document.getElementById("submit-btn").addEventListener('click', (e) =>{
 })
 
 const createMessage = async (username, usermail, usermsg) =>{
+  try {
+    await addDocument(usersCollectionRef, {name: username, email: usermail, message: usermsg});
+    alert('Your message has been sent!')
+  } catch (error) {
+    console.error(error)
+  }
   await addDocument(usersCollectionRef, {name: username, email: usermail, message: usermsg});
   // console.log({name, email, message});
-  alert('Your message has been sent!')
-  nameInput.value = "";
-  emailInput.value = "";
-  messageInput.value = "";
+  // alert('Your message has been sent!')
+  // nameInput.value = "";
+  // emailInput.value = "";
+  // messageInput.value = "";
 };
